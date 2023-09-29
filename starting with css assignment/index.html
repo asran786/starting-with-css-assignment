@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="external.css">
+</head>
+<style>
+  /* internal css  */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+   color: white;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+}
+.use-3-typecss{
+    background-color: black;
+    color: aliceblue;
+}
+
+.use-3-typecss h1{
+    color: black;
+}
+</style>
+<body>
+    <div class="container">
+
+ <!-- inline css  -->
+
+ <div class="header" style="background-color: black;">
+    <ul>
+        <li>Home </li>
+        <li>About</li>
+        <li>Contact us </li>
+        <li>Login</li>
+    </ul>
+ </div>
+
+ <div class="main">
+    <h1>This css assignment</h1>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+     necessitatibus. Molestias dolorem repellat iure minima, deserunt nihil 
+     beatae quasi dolore nostrum assumenda enim! Deserunt repudiandae eaque
+      molestiae dolorum, nobis quaerat!</p>
+ </div>
+   <!-- inline css  -->
+<div class="image" style="text-align: center;">
+
+<img src="pexels-akku-akkuu-18305119.jpg" alt="this is image">
+</div>
+ 
+    </div>
+
+   
+    <!-- using inline internal and external css ,i have set backgound color in three of them but it render only inline css background color  -->
+
+    <div class="use-3-typecss"  style="background-color: brown;">
+        
+        <!-- also taking inline css ,text color is showing blue not black not brown from internal and external css  -->
+        <h1 style="color: blue;">Using inline internal and external css</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, quas.</p>
+
+    </div>
+</body>
+</html>

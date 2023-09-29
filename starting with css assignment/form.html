@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample Form</title>
+</head>
+<style>
+  :root {
+            --primary-color: #007BFF; 
+            --secondary-color: #0056b3; 
+            --background-color: #f0f0f0; 
+        }
+
+    form{
+       text-align: center;
+        border: 2px solid black;
+        width: 50%;
+        height: 90vh !important;
+        background-color:var(--primary-color);
+    }
+    h2{
+        text-align: center;
+    }
+    .form{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+        width: 100%;
+
+    }
+    input{
+       
+        background-color: rgb(230, 193, 193);
+        color: white;
+        border: 2px solid rgb(0, 0, 0);
+    }
+    body {
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: var(--background-color);
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="color"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        #color{
+            height: 3rem;
+        }
+        .color-section {
+            background-color: rgb(249, 121, 121);
+            padding: 10px;
+            border-radius: 5px;
+        }
+</style>
+<body>
+    <div class="form">
+   
+    <form id="myform" action="" method="post" >
+        <h2>Sample Form</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required><br><br>
+
+        <label for="color">Choose Background Color:</label>
+        <input type="color" id="color" name="color" onchange="changeFormColor(this.value)"><br><br>
+
+        <div class="color-section">
+            <h3>This is a Section with Opacity</h3>
+            <p>This section has a red background with 50% opacity.</p>
+        </div>
+
+     <input type="submit" name="" id="submit">
+    </form>
+</div>
+</body>
+<script>
+   function changeFormColor(color) {
+        const form = document.getElementById("myForm");
+        form.style.backgroundColor = color;
+    }
+</script>
+</html>

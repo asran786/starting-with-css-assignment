@@ -1,0 +1,21 @@
+.container{
+    background-color: bisque;
+}
+.main{
+    text-align: center;
+   
+    color: white;
+    background-color: black;
+}
+
+img{
+   
+    width: 25rem;
+    height: 20rem;
+}
+.use-3-typecss{
+    background-color: blueviolet;
+}
+.use-3-typecss h1{
+    color: brown;
+}
